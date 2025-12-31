@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles, Github } from "lucide-react";
-import FormMockup from "./FormMockup";
+import InteractiveFormCard from "./InteractiveFormCard";
+import ExtensionImageCard from "./ExtensionImageCard";
 
 const HeroSection = () => {
   return (
@@ -99,20 +100,29 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Right Content - Form Cards */}
+        {/* Right Content - Cards */}
         <div className="relative h-[500px] hidden lg:block">
-          {/* Main Form Card */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <FormMockup variant="signup" delay={0.4} />
+          {/* Interactive Form Card - Main */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+            <InteractiveFormCard />
           </div>
 
-          {/* Secondary Cards */}
-          <div className="absolute top-8 right-0">
-            <FormMockup variant="checkout" delay={0.6} className="scale-90 opacity-80" />
+          {/* Extension Image Card 1 */}
+          <div className="absolute top-4 right-0">
+            <ExtensionImageCard 
+              alt="Prefiller extension popup" 
+              delay={0.6} 
+              className="w-48 h-32"
+            />
           </div>
 
-          <div className="absolute bottom-8 left-0">
-            <FormMockup variant="application" delay={0.8} className="scale-90 opacity-80" />
+          {/* Extension Image Card 2 */}
+          <div className="absolute bottom-4 left-0">
+            <ExtensionImageCard 
+              alt="Prefiller in action" 
+              delay={0.8} 
+              className="w-48 h-32"
+            />
           </div>
 
           {/* Decorative Elements */}
