@@ -13,24 +13,12 @@ const Header = () => {
           <span className="text-xl font-semibold text-foreground">Prefiller</span>
         </div>
 
-        {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-8">
-          <Button variant="nav" size="sm">How It Works</Button>
-          <Button variant="nav" size="sm">Features</Button>
-          <Button variant="nav" size="sm">Pricing</Button>
-        </div>
-
         {/* CTA */}
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="sm" className="hidden sm:flex text-foreground/70 hover:text-foreground">
-            Sign In
-          </Button>
-          <Button variant="hero" size="default" className="gap-2">
-            <Chrome className="w-4 h-4" />
-            <span className="hidden sm:inline">Add To Chrome</span>
-            <span className="sm:hidden">Install</span>
-          </Button>
-        </div>
+        <Button variant="hero" size="default" className="gap-2">
+          <Chrome className="w-4 h-4" />
+          <span className="hidden sm:inline">Add To Chrome</span>
+          <span className="sm:hidden">Install</span>
+        </Button>
       </nav>
     </header>
   );
