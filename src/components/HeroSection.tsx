@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Chrome, Sparkles } from "lucide-react";
+import { Chrome, Sparkles, Github } from "lucide-react";
 import FormMockup from "./FormMockup";
 
 const HeroSection = () => {
@@ -30,15 +30,29 @@ const HeroSection = () => {
             with a single click
           </motion.h1>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-muted-foreground max-w-lg leading-relaxed"
+            className="space-y-3"
           >
-            Prefiller learns from your input to provide accurate and fast form filling. 
-            Save valuable time and reduce repetitive typing on signups, checkouts, and applications.
-          </motion.p>
+            <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+              Prefiller learns from your input to provide accurate and fast form filling. 
+              Save valuable time and reduce repetitive typing on signups, checkouts, and applications.
+            </p>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span>Created by</span>
+              <a 
+                href="https://github.com/elitekaycy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-primary hover:underline font-medium"
+              >
+                <Github className="w-4 h-4" />
+                elitekaycy
+              </a>
+            </div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -85,19 +99,19 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Right Content - Floating Cards */}
+        {/* Right Content - Form Cards */}
         <div className="relative h-[500px] hidden lg:block">
           {/* Main Form Card */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-float">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <FormMockup variant="signup" delay={0.4} />
           </div>
 
           {/* Secondary Cards */}
-          <div className="absolute top-8 right-0 animate-float-delayed">
+          <div className="absolute top-8 right-0">
             <FormMockup variant="checkout" delay={0.6} className="scale-90 opacity-80" />
           </div>
 
-          <div className="absolute bottom-8 left-0 animate-float">
+          <div className="absolute bottom-8 left-0">
             <FormMockup variant="application" delay={0.8} className="scale-90 opacity-80" />
           </div>
 
