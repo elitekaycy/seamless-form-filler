@@ -101,27 +101,27 @@ const HeroSection = () => {
         </div>
 
         {/* Right Content - Cards */}
-        <div className="relative h-[500px] hidden lg:block">
+        <div className="relative h-[600px] hidden lg:block">
           {/* Interactive Form Card - Main */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <InteractiveFormCard />
           </div>
 
           {/* Extension Image Card 1 */}
-          <div className="absolute top-4 right-0">
+          <div className="absolute top-0 right-0">
             <ExtensionImageCard 
               alt="Prefiller extension popup" 
               delay={0.6} 
-              className="w-48 h-32"
+              className="w-64 h-44"
             />
           </div>
 
           {/* Extension Image Card 2 */}
-          <div className="absolute bottom-4 left-0">
+          <div className="absolute bottom-0 left-0">
             <ExtensionImageCard 
               alt="Prefiller in action" 
               delay={0.8} 
-              className="w-48 h-32"
+              className="w-64 h-44"
             />
           </div>
 

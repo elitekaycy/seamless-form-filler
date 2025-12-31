@@ -56,7 +56,7 @@ const InteractiveFormCard = ({ className = "" }: { className?: string }) => {
       initial={{ opacity: 0, y: 40, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-      className={`card-glass rounded-xl border border-border/50 p-5 w-80 ${className}`}
+      className={`card-glass rounded-xl border border-border/50 p-6 w-[420px] ${className}`}
     >
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
