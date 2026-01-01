@@ -200,9 +200,9 @@ const TermsOfService = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">11. Contact Information</h2>
           <p className="mb-4">For questions about these Terms:</p>
-          <ul className="space-y-1 mb-6">
-            <li><strong>GitHub Repository:</strong> <a href="https://github.com/elitekaycy/seamless-form-filler" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/elitekaycy/seamless-form-filler</a></li>
-            <li><strong>Issues/Support:</strong> <a href="https://github.com/elitekaycy/seamless-form-filler/issues" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub Issues</a></li>
+          <ul className="space-y-1 mb-6 list-disc pl-6">
+            <li><strong>GitHub Repository:</strong> <a href="https://github.com/elitekaycy/prefiller" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/elitekaycy/prefiller</a></li>
+            <li><strong>Issues/Support:</strong> <a href="https://github.com/elitekaycy/prefiller/issues" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub Issues</a></li>
             <li><strong>Email:</strong> dicksonanyaele1234@gmail.com</li>
           </ul>
 

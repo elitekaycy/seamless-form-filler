@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
           <h2 className="text-2xl font-semibold mt-8 mb-4">Information We Collect</h2>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">1. API Keys (Optional)</h3>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>What:</strong> Your AI provider API keys (Groq, Gemini, Claude)</li>
             <li><strong>Why:</strong> Required to authenticate requests to AI services</li>
             <li><strong>Storage:</strong> Encrypted and stored locally in Chrome's storage API</li>
@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">2. Uploaded Documents</h3>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>What:</strong> PDF, TXT, DOC, DOCX files you upload</li>
             <li><strong>Why:</strong> To extract information for form filling</li>
             <li><strong>Storage:</strong> Stored locally in Chrome's storage API</li>
@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">3. Extension Settings</h3>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>What:</strong> Selected AI provider, extension enabled/disabled state</li>
             <li><strong>Why:</strong> To remember your preferences</li>
             <li><strong>Storage:</strong> Stored locally in Chrome's storage API</li>
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">4. Form Data (Temporary)</h3>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>What:</strong> Form fields detected on web pages</li>
             <li><strong>Why:</strong> To analyze and fill forms with your document data</li>
             <li><strong>Storage:</strong> Processed in memory only, never persisted</li>
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Encryption</h3>
           <p className="mb-4">API keys are encrypted using the Web Crypto API:</p>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>Algorithm:</strong> AES-GCM (256-bit encryption)</li>
             <li><strong>Key Derivation:</strong> PBKDF2 with 100,000 iterations</li>
             <li><strong>Salt:</strong> Randomly generated per encryption</li>
@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Your Rights and Choices</h2>
           <h3 className="text-xl font-semibold mt-6 mb-3">Delete Your Data</h3>
-          <ul className="space-y-1 mb-4">
+          <ul className="space-y-1 mb-4 list-disc pl-6">
             <li><strong>Delete API Key:</strong> Settings → Click trash icon next to provider</li>
             <li><strong>Delete Documents:</strong> Documents tab → Click delete button per document</li>
             <li><strong>Delete All:</strong> Uninstall the extension</li>
@@ -131,8 +131,8 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
           <p className="mb-4">If you have questions about this Privacy Policy:</p>
-          <ul className="space-y-1 mb-6">
-            <li><strong>GitHub Issues:</strong> <a href="https://github.com/elitekaycy/seamless-form-filler/issues" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/elitekaycy/seamless-form-filler/issues</a></li>
+          <ul className="space-y-1 mb-6 list-disc pl-6">
+            <li><strong>GitHub Issues:</strong> <a href="https://github.com/elitekaycy/prefiller/issues" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github.com/elitekaycy/prefiller/issues</a></li>
             <li><strong>Email:</strong> dicksonanyaele1234@gmail.com</li>
           </ul>
 

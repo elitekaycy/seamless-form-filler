@@ -77,7 +77,7 @@ const HeroSection = () => {
           >
             <div className="flex items-center gap-4 flex-wrap">
               <a
-                href="https://github.com/elitekaycy/seamless-form-filler"
+                href="https://github.com/elitekaycy/prefiller"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-primary transition-colors"
