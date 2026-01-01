@@ -72,51 +72,87 @@ const ExtensionDemo = () => {
 
         <div className="space-y-4">
           {/* Position Field */}
-          <div>
+          <div className="relative">
             <label className="text-xs font-medium text-slate-600 mb-1.5 block">Applied Position *</label>
-            <input
-              type="text"
-              value={formData.position}
-              readOnly
-              placeholder="Enter position"
-              className="w-full px-3 py-2.5 text-sm rounded-lg bg-slate-50 border border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-blue-400"
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={formData.position}
+                readOnly
+                placeholder="Enter position"
+                className={`w-full px-3 py-2.5 text-sm rounded-lg border text-slate-800 placeholder:text-slate-400 focus:outline-none transition-all duration-300 ${
+                  formData.position ? "bg-emerald-50 border-emerald-400" : "bg-slate-50 border-slate-200"
+                }`}
+              />
+              {formData.position && (
+                <div className="absolute right-2 top-1/2 -translate-y-1/2">
+                  <Check className="w-4 h-4 text-emerald-500" />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Start Date Field */}
-          <div>
+          <div className="relative">
             <label className="text-xs font-medium text-slate-600 mb-1.5 block">Earliest Start Date *</label>
-            <input
-              type="text"
-              value={formData.startDate}
-              readOnly
-              placeholder="YYYY-MM-DD"
-              className="w-full px-3 py-2.5 text-sm rounded-lg bg-slate-50 border border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-blue-400"
-            />
+            <div className="relative">
+              <input
+                type="text"
+                value={formData.startDate}
+                readOnly
+                placeholder="YYYY-MM-DD"
+                className={`w-full px-3 py-2.5 text-sm rounded-lg border text-slate-800 placeholder:text-slate-400 focus:outline-none transition-all duration-300 ${
+                  formData.startDate ? "bg-emerald-50 border-emerald-400" : "bg-slate-50 border-slate-200"
+                }`}
+              />
+              {formData.startDate && (
+                <div className="absolute right-2 top-1/2 -translate-y-1/2">
+                  <Check className="w-4 h-4 text-emerald-500" />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Responsibility Field */}
-          <div>
+          <div className="relative">
             <label className="text-xs font-medium text-slate-600 mb-1.5 block">Why do you want this responsibility? *</label>
-            <textarea
-              value={formData.responsibility}
-              readOnly
-              placeholder="Describe your motivation..."
-              rows={3}
-              className="w-full px-3 py-2.5 text-sm rounded-lg bg-slate-50 border border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-blue-400 resize-none"
-            />
+            <div className="relative">
+              <textarea
+                value={formData.responsibility}
+                readOnly
+                placeholder="Describe your motivation..."
+                rows={3}
+                className={`w-full px-3 py-2.5 text-sm rounded-lg border text-slate-800 placeholder:text-slate-400 focus:outline-none resize-none transition-all duration-300 ${
+                  formData.responsibility ? "bg-emerald-50 border-emerald-400" : "bg-slate-50 border-slate-200"
+                }`}
+              />
+              {formData.responsibility && (
+                <div className="absolute right-2 top-2">
+                  <Check className="w-4 h-4 text-emerald-500" />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Fit Description Field */}
-          <div>
+          <div className="relative">
             <label className="text-xs font-medium text-slate-600 mb-1.5 block">Why would this role fit you? (60 words) *</label>
-            <textarea
-              value={formData.fitDescription}
-              readOnly
-              placeholder="Describe in 60 words..."
-              rows={3}
-              className="w-full px-3 py-2.5 text-sm rounded-lg bg-slate-50 border border-slate-200 text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-blue-400 resize-none"
-            />
+            <div className="relative">
+              <textarea
+                value={formData.fitDescription}
+                readOnly
+                placeholder="Describe in 60 words..."
+                rows={3}
+                className={`w-full px-3 py-2.5 text-sm rounded-lg border text-slate-800 placeholder:text-slate-400 focus:outline-none resize-none transition-all duration-300 ${
+                  formData.fitDescription ? "bg-emerald-50 border-emerald-400" : "bg-slate-50 border-slate-200"
+                }`}
+              />
+              {formData.fitDescription && (
+                <div className="absolute right-2 top-2">
+                  <Check className="w-4 h-4 text-emerald-500" />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Submit Button */}
