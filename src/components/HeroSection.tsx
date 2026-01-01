@@ -103,45 +103,21 @@ const HeroSection = () => {
         </div>
 
         {/* Right Content - Cards */}
-        <div className="relative h-[600px] hidden lg:block">
-          {/* Interactive Form Card - Main */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+        <div className="relative h-[500px] hidden lg:flex items-center gap-6">
+          {/* Interactive Form Card */}
+          <div className="flex-shrink-0">
             <InteractiveFormCard />
           </div>
 
-          {/* Extension Image Card 1 - Top Right */}
-          <div className="absolute -top-8 -right-16 z-10">
-            <ExtensionImageCard 
-              imageSrc={prefiller1}
-              alt="Prefiller extension popup" 
-              delay={0.6} 
-              className="w-80 h-52 shadow-xl"
-            />
-          </div>
-
-          {/* Extension Image Card 2 - Bottom Left */}
-          <div className="absolute -bottom-8 -left-16 z-10">
+          {/* Extension Screenshot */}
+          <div className="flex-shrink-0">
             <ExtensionImageCard 
               imageSrc={prefiller3}
-              alt="Prefiller in action" 
-              delay={0.8} 
-              className="w-80 h-52 shadow-xl"
+              alt="Prefiller extension in action" 
+              delay={0.6} 
+              className="w-[340px] h-[280px] shadow-2xl"
             />
           </div>
-
-          {/* Decorative Elements */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="absolute top-4 left-20 w-20 h-20 rounded-full bg-primary/10 blur-2xl"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-primary/5 blur-3xl"
-          />
         </div>
       </div>
 
