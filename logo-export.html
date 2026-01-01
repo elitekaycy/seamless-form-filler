@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefiller Logo Export</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .logo-container {
+            background: white;
+            border-radius: 0.125rem; /* rounded-sm */
+            padding: 0.125rem; /* p-0.5 */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0; /* slate-200 */
+            width: 2rem; /* w-8 = 32px */
+            height: 2rem; /* h-8 = 32px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .logo-container img {
+            width: 6rem; /* w-24 = 96px */
+            height: 6rem; /* h-24 = 96px */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./src/assets/preview-prefiller.png" alt="Prefiller Logo">
+    </div>
+
+    <script>
+        // Instructions for exporting
+        console.log("To export this logo as an image:");
+        console.log("1. Right-click on the logo and select 'Inspect'");
+        console.log("2. In DevTools, right-click on the .logo-container element");
+        console.log("3. Select 'Capture node screenshot'");
+        console.log("OR use a browser extension to capture the element");
+    </script>
+</body>
+</html>
