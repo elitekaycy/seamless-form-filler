@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles, Github } from "lucide-react";
-import InteractiveFormCard from "./InteractiveFormCard";
-import ExtensionImageCard from "./ExtensionImageCard";
-import prefiller1 from "@/assets/prefiller-1.png";
-import prefiller3 from "@/assets/prefiller-3.png";
+import ExtensionDemo from "./ExtensionDemo";
 
 const HeroSection = () => {
   return (
@@ -102,22 +99,9 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Right Content - Cards */}
-        <div className="relative h-[500px] hidden lg:flex items-center gap-6">
-          {/* Interactive Form Card */}
-          <div className="flex-shrink-0">
-            <InteractiveFormCard />
-          </div>
-
-          {/* Extension Screenshot */}
-          <div className="flex-shrink-0">
-            <ExtensionImageCard 
-              imageSrc={prefiller3}
-              alt="Prefiller extension in action" 
-              delay={0.6} 
-              className="w-[340px] h-[280px] shadow-2xl"
-            />
-          </div>
+        {/* Right Content - Extension Demo */}
+        <div className="hidden lg:flex items-center justify-center">
+          <ExtensionDemo />
         </div>
       </div>
 
