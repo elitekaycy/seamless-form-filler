@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles, Github } from "lucide-react";
 import InteractiveFormCard from "./InteractiveFormCard";
 import ExtensionImageCard from "./ExtensionImageCard";
+import prefiller1 from "@/assets/prefiller-1.png";
+import prefiller3 from "@/assets/prefiller-3.png";
 
 const HeroSection = () => {
   return (
@@ -110,6 +112,7 @@ const HeroSection = () => {
           {/* Extension Image Card 1 - Top Right */}
           <div className="absolute -top-8 -right-16 z-10">
             <ExtensionImageCard 
+              imageSrc={prefiller1}
               alt="Prefiller extension popup" 
               delay={0.6} 
               className="w-80 h-52 shadow-xl"
@@ -119,6 +122,7 @@ const HeroSection = () => {
           {/* Extension Image Card 2 - Bottom Left */}
           <div className="absolute -bottom-8 -left-16 z-10">
             <ExtensionImageCard 
+              imageSrc={prefiller3}
               alt="Prefiller in action" 
               delay={0.8} 
               className="w-80 h-52 shadow-xl"
