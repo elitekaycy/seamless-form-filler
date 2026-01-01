@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Chrome } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const Header = () => {
   return (
@@ -7,9 +8,7 @@ const Header = () => {
       <nav className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">P</span>
-          </div>
+          <img src={logo} alt="Prefiller" className="w-8 h-8" />
           <span className="text-xl font-semibold text-foreground">Prefiller</span>
         </div>
 
