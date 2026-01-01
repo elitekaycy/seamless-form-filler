@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Check, FileText, Sparkles, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
+import logo from "@/assets/logo.svg";
 
 const ExtensionDemo = () => {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -133,9 +134,7 @@ const ExtensionDemo = () => {
       {/* Extension Sidebar Panel */}
       <div className="bg-slate-50 p-5 w-[240px] border-l border-slate-200 flex flex-col">
         <div className="flex items-center gap-2 mb-5">
-          <div className="w-7 h-7 rounded-lg bg-blue-500 flex items-center justify-center">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
+          <img src={logo} alt="Prefiller" className="w-7 h-7" />
           <span className="font-semibold text-sm text-slate-800">Prefiller</span>
         </div>
 
