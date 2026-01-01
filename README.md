@@ -1,73 +1,175 @@
-# Welcome to your Lovable project
+# Prefiller Landing Page
 
-## Project info
+> **AI-Powered Form Filling** - Smart, secure, and time-saving Chrome extension
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://elitekaycy.github.io/seamless-form-filler/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Pages](https://img.shields.io/badge/deploy-GitHub%20Pages-blue)](https://github.com/elitekaycy/seamless-form-filler)
 
-## How can I edit this code?
+## 🌐 Live Site
 
-There are several ways of editing your application.
+**Landing Page:** [https://elitekaycy.github.io/seamless-form-filler/](https://elitekaycy.github.io/seamless-form-filler/)
 
-**Use Lovable**
+**Legal Pages:**
+- Privacy Policy: [/privacy-policy](https://elitekaycy.github.io/seamless-form-filler/privacy-policy)
+- Terms of Service: [/terms-of-service](https://elitekaycy.github.io/seamless-form-filler/terms-of-service)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 📖 About
 
-Changes made via Lovable will be committed automatically to this repo.
+This is the official landing page for **Prefiller**, an AI-powered Chrome extension that automatically fills web forms using information from your uploaded documents.
 
-**Use your preferred IDE**
+### Key Features Highlighted
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🤖 **4 AI Providers Supported** - Groq, Google Gemini, Anthropic Claude, Chrome AI
+- 🔒 **Privacy-Focused** - All data stored locally, AES-256 encryption
+- ⚡ **Fast & Efficient** - Intelligent form field detection
+- ♿ **Accessible** - WCAG 2.1 Level AA compliant
+- 🎨 **Beautiful UI** - Interactive demo showing extension in action
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Built With
 
-Follow these steps:
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **shadcn/ui** - Component library
+- **React Router** - Client-side routing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js 18+ ([install with nvm](https://github.com/nvm-sh/nvm))
+- npm or yarn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/elitekaycy/seamless-form-filler.git
+
+# Navigate to project directory
+cd seamless-form-filler
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+# Build optimized production bundle
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build locally
+npm run preview
+```
 
-## What technologies are used for this project?
+## 📦 Deployment
 
-This project is built with:
+### GitHub Pages (Automatic)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The site automatically deploys to GitHub Pages when you push to the `main` branch.
 
-## How can I deploy this project?
+**GitHub Actions Workflow:** `.github/workflows/github-pages.yml`
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Docker
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+# Build Docker image
+docker build -t prefiller-landing .
 
-Yes, you can!
+# Run container
+docker run -p 8080:80 prefiller-landing
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**Docker Hub (Automatic):** Pushes to `dev` branch trigger Docker build
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete deployment guide.
+
+## 📁 Project Structure
+
+```
+seamless-form-filler/
+├── src/
+│   ├── components/
+│   │   ├── ExtensionDemo.tsx    # Interactive form-filling demo
+│   │   ├── Header.tsx            # Navigation header
+│   │   ├── HeroSection.tsx       # Landing page hero
+│   │   └── ui/                   # shadcn/ui components
+│   ├── pages/
+│   │   ├── Index.tsx             # Home page
+│   │   ├── PrivacyPolicy.tsx     # Privacy policy
+│   │   └── TermsOfService.tsx    # Terms of service
+│   ├── App.tsx                   # Router configuration
+│   └── main.tsx                  # App entry point
+├── public/
+│   ├── favicon.ico               # Site icons
+│   └── 404.html                  # SPA routing fallback
+├── .github/workflows/
+│   ├── github-pages.yml          # Pages deployment
+│   └── docker-push.yml           # Docker Hub deployment
+├── Dockerfile                    # Docker configuration
+├── nginx.conf                    # Nginx server config
+└── vite.config.ts                # Vite configuration
+```
+
+## 🎨 Color Scheme
+
+The landing page uses a vibrant color scheme matching the Prefiller brand:
+
+- **Primary (Pink/Magenta):** `#EB1A99` (HSL 330, 80%, 52%)
+- **Accent (Blue):** `#3098F8` (HSL 207, 80%, 58%)
+- **Background (Navy):** `#0F1429` (HSL 222, 47%, 11%)
+- **Success (Green):** Emerald-500 for form fill indicators
+
+## 🔗 Related Links
+
+- **Chrome Extension Repo:** [github.com/elitekaycy/prefiller](https://github.com/elitekaycy/prefiller) *(coming soon)*
+- **Chrome Web Store:** *(coming soon)*
+- **Documentation:** See [CHROME_WEB_STORE_SUBMISSION.md](./CHROME_WEB_STORE_SUBMISSION.md)
+
+## 📄 Legal
+
+- [Privacy Policy](https://elitekaycy.github.io/seamless-form-filler/privacy-policy)
+- [Terms of Service](https://elitekaycy.github.io/seamless-form-filler/terms-of-service)
+- **License:** MIT
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 👨‍💻 Author
+
+**elitekaycy**
+- GitHub: [@elitekaycy](https://github.com/elitekaycy)
+- Email: dicksonanyaele1234@gmail.com
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
+- Deployed on [GitHub Pages](https://pages.github.com/)
+
+---
+
+**© 2026 Prefiller. All rights reserved.**
+
+*Privacy-focused. Secure. Transparent.*

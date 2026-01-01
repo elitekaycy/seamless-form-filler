@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <Link to="/" className="text-primary hover:underline flex items-center gap-2">
-            ← Back to Home
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-12 pt-24">
         <h1 className="text-4xl font-bold mb-4">Terms of Service for Prefiller</h1>
         <p className="text-muted-foreground mb-8">
           <strong>Last Updated:</strong> December 31, 2025<br />
@@ -52,11 +47,11 @@ const TermsOfService = () => {
           </ol>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">What Prefiller Does NOT Do:</h3>
-          <ul className="space-y-1 mb-6">
-            <li>❌ Automatically submit forms (you must click submit)</li>
-            <li>❌ Store form data permanently</li>
-            <li>❌ Upload your data to our servers (we don't have servers)</li>
-            <li>❌ Guarantee 100% accuracy in form filling</li>
+          <ul className="space-y-1 mb-6 list-disc pl-6">
+            <li>Automatically submit forms (you must click submit)</li>
+            <li>Store form data permanently</li>
+            <li>Upload your data to our servers (we don't have servers)</li>
+            <li>Guarantee 100% accuracy in form filling</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">3. User Requirements</h2>
@@ -95,12 +90,12 @@ const TermsOfService = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-3">4.2 Restrictions</h3>
           <p className="mb-2">You may NOT:</p>
-          <ul className="space-y-1 mb-6">
-            <li>❌ Use the Extension for illegal, fraudulent, or malicious purposes</li>
-            <li>❌ Use the Extension to violate any website's terms of service</li>
-            <li>❌ Attempt to circumvent security measures or access controls</li>
-            <li>❌ Use the Extension to spam, harass, or abuse others</li>
-            <li>❌ Remove or modify any copyright, trademark, or proprietary notices</li>
+          <ul className="space-y-1 mb-6 list-disc pl-6">
+            <li>Use the Extension for illegal, fraudulent, or malicious purposes</li>
+            <li>Use the Extension to violate any website's terms of service</li>
+            <li>Attempt to circumvent security measures or access controls</li>
+            <li>Use the Extension to spam, harass, or abuse others</li>
+            <li>Remove or modify any copyright, trademark, or proprietary notices</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">5. API Keys and Third-Party Services</h2>
@@ -126,7 +121,7 @@ const TermsOfService = () => {
           </ul>
 
           <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-6 my-6">
-            <h4 className="font-semibold mb-2">⚠️ Important: API Costs</h4>
+            <h4 className="font-semibold mb-2">Important: API Costs</h4>
             <p className="text-sm">We are not responsible for any costs or charges incurred from AI provider usage. Review provider pricing before use.</p>
           </div>
 
@@ -143,21 +138,21 @@ const TermsOfService = () => {
           <h2 className="text-2xl font-semibold mt-8 mb-4">7. Acceptable Use</h2>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Permitted Uses</h3>
-          <ul className="space-y-1 mb-4">
-            <li>✅ Fill legitimate web forms with accurate information</li>
-            <li>✅ Save time on repetitive form filling tasks</li>
-            <li>✅ Improve form filling accuracy</li>
-            <li>✅ Use for personal or commercial purposes</li>
+          <ul className="space-y-1 mb-4 list-disc pl-6">
+            <li>Fill legitimate web forms with accurate information</li>
+            <li>Save time on repetitive form filling tasks</li>
+            <li>Improve form filling accuracy</li>
+            <li>Use for personal or commercial purposes</li>
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Prohibited Uses</h3>
-          <ul className="space-y-1 mb-6">
-            <li>❌ Submit false, fraudulent, or misleading information</li>
-            <li>❌ Automate abuse, spam, or malicious activity</li>
-            <li>❌ Violate any laws or regulations</li>
-            <li>❌ Bypass website security measures or CAPTCHAs</li>
-            <li>❌ Create fake accounts or identities</li>
-            <li>❌ Manipulate voting, surveys, or contests</li>
+          <ul className="space-y-1 mb-6 list-disc pl-6">
+            <li>Submit false, fraudulent, or misleading information</li>
+            <li>Automate abuse, spam, or malicious activity</li>
+            <li>Violate any laws or regulations</li>
+            <li>Bypass website security measures or CAPTCHAs</li>
+            <li>Create fake accounts or identities</li>
+            <li>Manipulate voting, surveys, or contests</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">8. Disclaimers and Warranties</h2>
@@ -213,15 +208,15 @@ const TermsOfService = () => {
 
           <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 my-8">
             <h3 className="text-lg font-semibold mb-3">Summary (TL;DR)</h3>
-            <ul className="space-y-2 list-none pl-0">
-              <li>✅ You can use Prefiller for personal or commercial purposes</li>
-              <li>✅ Open source software - audit the code yourself</li>
-              <li>⚠️ Review AI-generated form fills before submission</li>
-              <li>⚠️ You're responsible for API key costs and usage</li>
-              <li>⚠️ Comply with AI provider and website terms of service</li>
-              <li>❌ Don't use for illegal, fraudulent, or abusive purposes</li>
-              <li>❌ No warranties - provided "as is"</li>
-              <li>❌ We're not liable for damages, lost data, or API costs</li>
+            <ul className="space-y-2 list-disc pl-6">
+              <li>You can use Prefiller for personal or commercial purposes</li>
+              <li>Open source software - audit the code yourself</li>
+              <li>Review AI-generated form fills before submission</li>
+              <li>You're responsible for API key costs and usage</li>
+              <li>Comply with AI provider and website terms of service</li>
+              <li>Don't use for illegal, fraudulent, or abusive purposes</li>
+              <li>No warranties - provided "as is"</li>
+              <li>We're not liable for damages, lost data, or API costs</li>
             </ul>
           </div>
 

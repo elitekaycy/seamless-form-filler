@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <Link to="/" className="text-primary hover:underline flex items-center gap-2">
-            ← Back to Home
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-6 py-12">
+      <main className="max-w-4xl mx-auto px-6 py-12 pt-24">
         <h1 className="text-4xl font-bold mb-4">Privacy Policy for Prefiller</h1>
         <p className="text-muted-foreground mb-8">
           <strong>Last Updated:</strong> December 31, 2025<br />
@@ -28,12 +23,12 @@ const PrivacyPolicy = () => {
 
           <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 my-6">
             <h3 className="text-lg font-semibold mb-3">Key Privacy Principles:</h3>
-            <ul className="space-y-2 list-none pl-0">
-              <li>✅ <strong>All data stored locally</strong> on your device only</li>
-              <li>✅ <strong>No data collection</strong> or analytics tracking</li>
-              <li>✅ <strong>No third-party sharing</strong> of your information</li>
-              <li>✅ <strong>You control your data</strong> - delete anytime</li>
-              <li>✅ <strong>Transparent operation</strong> - open source code available</li>
+            <ul className="space-y-2 list-disc pl-6">
+              <li><strong>All data stored locally</strong> on your device only</li>
+              <li><strong>No data collection</strong> or analytics tracking</li>
+              <li><strong>No third-party sharing</strong> of your information</li>
+              <li><strong>You control your data</strong> - delete anytime</li>
+              <li><strong>Transparent operation</strong> - open source code available</li>
             </ul>
           </div>
 
@@ -75,14 +70,14 @@ const PrivacyPolicy = () => {
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">What We DO NOT Collect</h2>
-          <ul className="space-y-2 mb-6">
-            <li>❌ <strong>No analytics or tracking</strong> - We don't track how you use the extension</li>
-            <li>❌ <strong>No usage statistics</strong> - We don't collect metrics or telemetry</li>
-            <li>❌ <strong>No personal information</strong> - Name, email, phone number not collected by us</li>
-            <li>❌ <strong>No browsing history</strong> - We don't track which websites you visit</li>
-            <li>❌ <strong>No form data storage</strong> - Form information is processed in memory only</li>
-            <li>❌ <strong>No cookies</strong> - We don't set any tracking cookies</li>
-            <li>❌ <strong>No server uploads</strong> - No data is sent to our servers (we don't have servers!)</li>
+          <ul className="space-y-2 mb-6 list-disc pl-6">
+            <li><strong>No analytics or tracking</strong> - We don't track how you use the extension</li>
+            <li><strong>No usage statistics</strong> - We don't collect metrics or telemetry</li>
+            <li><strong>No personal information</strong> - Name, email, phone number not collected by us</li>
+            <li><strong>No browsing history</strong> - We don't track which websites you visit</li>
+            <li><strong>No form data storage</strong> - Form information is processed in memory only</li>
+            <li><strong>No cookies</strong> - We don't set any tracking cookies</li>
+            <li><strong>No server uploads</strong> - No data is sent to our servers (we don't have servers!)</li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Data Storage and Security</h2>
@@ -143,14 +138,14 @@ const PrivacyPolicy = () => {
 
           <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 my-8">
             <h3 className="text-lg font-semibold mb-3">Summary (TL;DR)</h3>
-            <ul className="space-y-2 list-none pl-0">
-              <li>✅ <strong>Your data stays on your device</strong> - We don't have servers</li>
-              <li>✅ <strong>API keys are encrypted</strong> - AES-256 encryption</li>
-              <li>✅ <strong>Documents stored locally</strong> - In Chrome's storage</li>
-              <li>✅ <strong>No tracking or analytics</strong> - Zero telemetry</li>
-              <li>✅ <strong>No data selling</strong> - We don't monetize your data</li>
-              <li>✅ <strong>You control everything</strong> - Delete data anytime</li>
-              <li>✅ <strong>Open source</strong> - Code is auditable</li>
+            <ul className="space-y-2 list-disc pl-6">
+              <li><strong>Your data stays on your device</strong> - We don't have servers</li>
+              <li><strong>API keys are encrypted</strong> - AES-256 encryption</li>
+              <li><strong>Documents stored locally</strong> - In Chrome's storage</li>
+              <li><strong>No tracking or analytics</strong> - Zero telemetry</li>
+              <li><strong>No data selling</strong> - We don't monetize your data</li>
+              <li><strong>You control everything</strong> - Delete data anytime</li>
+              <li><strong>Open source</strong> - Code is auditable</li>
             </ul>
           </div>
 
