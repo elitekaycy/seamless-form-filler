@@ -100,7 +100,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Content - Extension Demo */}
-        <div className="hidden lg:flex items-center justify-end -mr-6 lg:-mr-12">
+        <div className="hidden lg:flex items-center justify-center">
           <ExtensionDemo />
         </div>
       </div>
