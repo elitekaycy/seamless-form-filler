@@ -1,9 +1,22 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>Privacy Policy | Prefiller - AI-Powered Form Filling Chrome Extension</title>
+        <meta name="title" content="Privacy Policy | Prefiller - AI-Powered Form Filling Chrome Extension" />
+        <meta name="description" content="Read Prefiller's privacy policy. Your data stays on your device. No tracking, no analytics, no data collection. All form data is processed locally with end-to-end encryption." />
+        <link rel="canonical" href="https://prefiller.scalestash.com/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy | Prefiller" />
+        <meta property="og:description" content="Your data stays on your device. No tracking, no analytics, no data collection." />
+        <meta property="og:url" content="https://prefiller.scalestash.com/privacy-policy" />
+        <meta property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Header */}
       <Header />
 
