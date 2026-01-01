@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Check, FileText, Sparkles, Loader2 } from "lucide-react";
+import { Check, FileText, Sparkles, Loader2, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import logo from "@/assets/logo.svg";
@@ -56,18 +56,28 @@ const ExtensionDemo = () => {
     });
   };
 
+  const handleReset = () => {
+    setFormData({
+      position: "",
+      startDate: "",
+      responsibility: "",
+      fitDescription: "",
+    });
+    setIsFilled(false);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-      className="flex rounded-2xl overflow-hidden border border-slate-200 shadow-2xl"
+      className="flex rounded-l-2xl overflow-hidden border border-slate-200 border-r-0 shadow-2xl"
     >
       {/* Job Application Form */}
-      <div className="bg-white p-6 w-[380px]">
-        <div className="mb-5">
-          <h3 className="font-semibold text-base text-slate-800">Online Job Application Form</h3>
-          <p className="text-xs text-slate-500 mt-1">Complete all required fields below</p>
+      <div className="bg-white p-8 w-[420px]">
+        <div className="mb-6">
+          <h3 className="font-semibold text-lg text-slate-800">Online Job Application Form</h3>
+          <p className="text-sm text-slate-500 mt-1">Complete all required fields below</p>
         </div>
 
         <div className="space-y-4">
@@ -168,7 +178,7 @@ const ExtensionDemo = () => {
       </div>
 
       {/* Extension Sidebar Panel */}
-      <div className="bg-slate-50 p-5 w-[240px] border-l border-slate-200 flex flex-col">
+      <div className="bg-slate-50 p-6 w-[280px] border-l border-slate-200 flex flex-col">
         <div className="flex items-center gap-2 mb-5">
           <img src={logo} alt="Prefiller" className="w-7 h-7" />
           <span className="font-semibold text-sm text-slate-800">Prefiller</span>
@@ -225,13 +235,14 @@ const ExtensionDemo = () => {
         </Button>
 
         {isFilled && (
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-xs text-emerald-600 text-center mt-3 font-medium"
+          <Button
+            onClick={handleReset}
+            variant="outline"
+            className="w-full text-sm gap-2 mt-3 border-slate-300 text-slate-600 hover:bg-slate-100"
           >
-            ✓ Form filled successfully
-          </motion.p>
+            <RotateCcw className="w-4 h-4" />
+            Reset Form
+          </Button>
         )}
       </div>
     </motion.div>
