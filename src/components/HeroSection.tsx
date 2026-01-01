@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Chrome, Sparkles, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 import ExtensionDemo from "./ExtensionDemo";
 
 const HeroSection = () => {
@@ -86,6 +87,14 @@ const HeroSection = () => {
               </a>
               <div className="h-4 w-px bg-border" />
               <span>MIT License</span>
+              <div className="h-4 w-px bg-border" />
+              <Link to="/privacy-policy" className="hover:text-primary transition-colors">
+                Privacy Policy
+              </Link>
+              <div className="h-4 w-px bg-border" />
+              <Link to="/terms-of-service" className="hover:text-primary transition-colors">
+                Terms of Service
+              </Link>
             </div>
             <div>
               <p>© {new Date().getFullYear()} Prefiller. All rights reserved.</p>
